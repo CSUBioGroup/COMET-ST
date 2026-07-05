@@ -6,52 +6,9 @@ Spatial transcriptomics measures gene expression while preserving tissue coordin
 </p>
 
 # Requirements
-Python >= 3.10
-
-Core dependencies:
-anndata==0.11.4
-scanpy==1.11.5
-squidpy==1.6.5
-numpy==1.26.4
-pandas==2.3.3
-scipy==1.15.3
-scikit-learn==1.7.2
-scikit-image==0.25.2
-scikit-misc==0.5.2
-matplotlib==3.10.8
-seaborn==0.13.2
-networkx==3.4.2
-igraph
-leidenalg
-umap-learn==0.5.11
-h5py==3.16.0
-tqdm==4.67.3
-
-Deep learning dependencies:
-torch==2.5.0+cu124
-torchvision==0.20.0+cu124
-torchaudio==2.5.0+cu124
-torch-geometric==2.7.0
-torch_scatter==2.1.2+pt25cu124
-torch_sparse==0.6.18+pt25cu124
-faiss-gpu==1.7.2
-
-Spatial transcriptomics / image-related dependencies:
-spatialdata==0.5.0
-spatial_image==1.2.3
-multiscale_spatial_image==2.0.3
-ome-zarr==0.11.1
-zarr==2.18.3
-numcodecs==0.13.1
-dask==2024.11.2
-dask-image==2025.11.0
-xarray==2025.6.1
-tifffile==2025.5.10
-pillow==12.1.1
-
-Optional dependencies:
-rpy2
-POT==0.9.6.post1
-geopandas==1.1.3
-shapely==2.1.2
-pyproj==3.7.1
+The main dependencies are:
+Python >= 3.10, PyTorch 2.5.0 + CUDA 12.4, torch-geometric 2.7.0,
+scanpy 1.11.5, anndata 0.11.4, squidpy 1.6.5, numpy 1.26.4,
+pandas 2.3.3, scipy 1.15.3, scikit-learn 1.7.2, scikit-image 0.25.2,
+matplotlib 3.10.8, seaborn 0.13.2, igraph, leidenalg, umap-learn 0.5.11,
+faiss-gpu 1.7.2, spatialdata 0.5.0, zarr 2.18.3, h5py 3.16.0.
