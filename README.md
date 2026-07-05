@@ -7,8 +7,21 @@ Spatial transcriptomics measures gene expression while preserving tissue coordin
 
 # Requirements
 The main dependencies are:
-Python >= 3.10, PyTorch 2.5.0 + CUDA 12.4, torch-geometric 2.7.0,
-scanpy 1.11.5, anndata 0.11.4, squidpy 1.6.5, numpy 1.26.4,
-pandas 2.3.3, scipy 1.15.3, scikit-learn 1.7.2, scikit-image 0.25.2,
-matplotlib 3.10.8, seaborn 0.13.2, igraph, leidenalg, umap-learn 0.5.11,
-faiss-gpu 1.7.2, spatialdata 0.5.0, zarr 2.18.3, h5py 3.16.0.
+Python >= 3.10, 
+PyTorch 2.5.0 + CUDA 12.4, 
+torch-geometric 2.7.0,
+scanpy 1.11.5, 
+anndata 0.11.4,
+squidpy 1.6.5, 
+numpy 1.26.4,
+pandas 2.3.3,
+scipy 1.15.3, 
+scikit-learn 1.7.2,
+scikit-image 0.25.2,
+matplotlib 3.10.8, 
+seaborn 0.13.2, 
+umap-learn 0.5.11,
+faiss-gpu 1.7.2, 
+spatialdata 0.5.0, 
+zarr 2.18.3, 
+h5py 3.16.0.
