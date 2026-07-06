@@ -5,23 +5,44 @@ Spatial transcriptomics measures gene expression while preserving tissue coordin
   <img src="figures/stCOMET_fig.png" width="900">
 </p>
 
-# Requirements
-The main dependencies are:
-Python >= 3.10, 
-PyTorch 2.5.0 + CUDA 12.4, 
-torch-geometric 2.7.0,
-scanpy 1.11.5, 
-anndata 0.11.4,
-squidpy 1.6.5, 
-numpy 1.26.4,
-pandas 2.3.3,
-scipy 1.15.3, 
-scikit-learn 1.7.2,
-scikit-image 0.25.2,
-matplotlib 3.10.8, 
-seaborn 0.13.2, 
-umap-learn 0.5.11,
-faiss-gpu 1.7.2, 
-spatialdata 0.5.0, 
-zarr 2.18.3, 
-h5py 3.16.0.
+## Requirements 要求
+
+Core package versions used in the project environment are listed below.
+
+项目中使用的核心软件包版本如下所示。
+
+```text
+python>=3.10
+anndata==0.11.4
+scanpy==1.11.5
+squidpy==1.6.5
+numpy==1.26.4
+pandas==2.3.3
+scipy==1.15.3
+scikit-learn==1.7.2
+scikit-image==0.25.2
+scikit-misc==0.5.2
+matplotlib==3.10.8
+seaborn==0.13.2
+networkx==3.4.2
+umap-learn==0.5.11
+faiss-gpu==1.7.2
+h5py==3.16.0
+spatialdata==0.5.0
+zarr==2.18.3
+torch==2.5.0+cu124
+torchvision==0.20.0+cu124
+torchaudio==2.5.0+cu124
+torch-geometric==2.7.0
+torch-scatter==2.1.2+pt25cu124
+torch-sparse==0.6.18+pt25cu124
+tqdm==4.67.3
+```
+
+Install the Python dependencies with:
+
+使用以下命令安装 Python 所需的依赖项：
+
+```bash
+pip install -r requirements.txt
+```
