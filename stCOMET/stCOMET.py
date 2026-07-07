@@ -285,29 +285,4 @@ class stCOMET:
         print("Training completed!")
         return self._finalize_training_output()
 
-    def train_stcomet_with_best_model(self, best_model_state, callback=None):
-        self._prepare_training_graph_state()
-        self.model = self._build_model()
-        self.model.load_state_dict(best_model_state)
-
-        with torch.no_grad():
-            self.model.eval()
-            emb_result = self._get_current_embedding()
-            self.adata.obsm['emb'] = emb_result.detach().cpu().numpy()
-
-            try:
-                truth = self._read_ground_truth()
-                self.adata.obs['ground_truth'] = truth
-                adata_for_clustering = self.adata.copy()
-                final_ari, adata_for_clustering, has_valid_score = self._cluster_and_score(adata_for_clustering)
-                if has_valid_score:
-                    print(f"Best ARI: {final_ari:.4f}")
-                if callback is not None:
-                    callback(final_ari, adata_for_clustering if has_valid_score else self.adata)
-            except Exception as e:
-                print(f"ARI Error: {str(e)}")
-                final_ari = 0.0
-                if callback is not None:
-                    callback(final_ari, self.adata)
-
-        return self.adata
+  
