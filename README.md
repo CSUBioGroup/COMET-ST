@@ -89,8 +89,6 @@ print(adata.obsm["emb"].shape)
 # Perform spatial domain clustering.
 stcomet_spatial_clustering(adata)
 
-# The predicted spatial domains are stored in adata.obs["domain"].
-adata.write_h5ad("stcomet_result.h5ad")
 ```
 
 If `method="mclust"` is used for clustering, the R package `mclust` and `rpy2` should be available in the environment.
