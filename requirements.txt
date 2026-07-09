@@ -35,8 +35,8 @@ fonttools==4.62.1
 frozenlist==1.8.0
 fsspec==2026.2.0
 geopandas==1.1.3
-# Editable install with no version control (GraphST==1.1.1)
--e /private_data/summer/liuxy/GraphST-main
+# Editable install with no version control
+-e /private_data/summer/liuxy/stCOMET-main
 h5py==3.16.0
 idna==3.11
 igraph @ file:///home/conda/feedstock_root/build_artifacts/python-igraph_1761816618138/work
