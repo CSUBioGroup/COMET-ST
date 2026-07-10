@@ -6,11 +6,9 @@ Spatial transcriptomics measures gene expression while preserving tissue coordin
   <img src="./figures/stCOMET_fig.png" width="900" alt="stCOMET overview">
 </p>
 
-## Requirements 要求
+## Requirements 
 
 Core package versions used in the project environment are listed below.
-
-项目中使用的核心软件包版本如下所示。
 
 ```text
 python>=3.10
@@ -41,8 +39,6 @@ tqdm==4.67.3
 ```
 
 Install the Python dependencies with:
-
-使用以下命令安装 Python 所需的依赖项：
 
 ```bash
 pip install -r requirements.txt
